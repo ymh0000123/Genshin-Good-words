@@ -50,4 +50,4 @@ function yshj() {
     document.getElementById("ys").innerText = randomText;
 }
 
-window.onload = yshj; // 页面加载时调用 getRandomText 函数
+window.onload = yshj; 

@@ -1,5 +1,5 @@
 function yshj() {
-    var texts = [
+    var allhj = [
         "一切力量皆有其代价,一千种权力伴随着一千种责任。",
         "为了正确之路，人们不断放弃，不断失去。",
         "见证者，为见证而来。铭记者，因铭记而生。",
@@ -51,8 +51,8 @@ function yshj() {
         "做学问可不是赶潮流、没有冷门热门之说。"
     ];
 
-    var randomNumber = Math.floor(Math.random() * texts.length);
-    var randomText = texts[randomNumber];
+    var randomNumber = Math.floor(Math.random() * allhj.length);
+    var randomText = allhj[randomNumber];
 
     document.getElementById("ys").innerText = randomText;
 }

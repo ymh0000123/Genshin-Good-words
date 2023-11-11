@@ -6,8 +6,8 @@ fetch('https://github.moeyy.xyz/https://raw.githubusercontent.com/ymh0000123/Gen
   const lines = data.split('\n');
   // 随机选择一行并显示在页面上
   const randomLine = lines[Math.floor(Math.random() * lines.length)];
-  document.getElementById('yshj').innerText = randomLine;
+  document.getElementById('ys').innerText = randomLine;
 })
 .catch(error => {
-  console.error('Error fetching yshj:', error);
+  console.error('Error fetching ys:', error);
 });

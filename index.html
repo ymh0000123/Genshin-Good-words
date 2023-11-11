@@ -1,25 +1,90 @@
 <!--
- * @Date: 2023-08-20 18:49:28
+ * @Date: 2023-11-11 18:37:07
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-10-14 15:04:05
+ * @LastEditTime: 2023-11-11 20:01:37
+ * @FilePath: \Genshin-Impact-Good-words-and-sentences\index.html
+-->
+<!--
+ * @Date: 2023-11-11 18:37:07
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2023-11-11 19:57:05
  * @FilePath: \Genshin-Impact-Good-words-and-sentences\index.html
 -->
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+
 <head>
-    <title>原神好句</title>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <title>原神好句API</title>
+
+  <!-- 引入 layui.css -->
+  <link href="https://unpkg.com/layui@2.8.18/dist/css/layui.css" rel="stylesheet">
+  <!-- 引入 layui.js -->
+  <script src="https://unpkg.com/layui@2.8.18/dist/layui.js"></script>
+  <!-- 引入Bootstrap的CSS库 -->
+  <link href="https://unpkg.com/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- 引入Bootstrap的JavaScript库 -->
+  <script src="https://unpkg.com/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .center {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .div {
+      margin-top: 20px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>随机显示原神好句</h1>
-    <p id="ys">加载中。</p>
-	<h2>如何使用这个api</h2>
-	<pre>
-	<code>
-	<p>&lt;span id="ys"&gt;加载中...&lt;/span&gt;
-    <p>&lt;script src="https://ymh0000123.github.io/Genshin-Impact-Good-words-and-sentences/script.js" charset="utf-8"&gt;&lt;/script&gt;</p>
-	</code>
-	</pre>
-	<button onclick="location.reload()">换一句</button>
+
+  <div class="center">
+    <h1>原神好句API</h1>
+    <h2><span class="layui-badge layui-bg-blue">免费</span> <span class="layui-badge layui-bg-blue">开源</span></h2>
+
+  </div>
+  <div class="container py-4">
+    <div class="card">
+      <div class="card-body">
+        <p id="yshj"></p>
+        <button type="button" class="layui-btn layui-btn-normal layui-btn-radius" onclick="location.reload()">换一句</button>
+      </div>
+    </div>
+  </div>
+  <div class="container py-4">
+    <fieldset class="layui-elem-field">
+      <legend><h2>如何使用这个api</h2></legend>
+      <div class="layui-field-box">
+        <h4><span class="layui-badge layui-bg-blue">国内推荐使用</span>通过github.moeyy.xyz引入</h4>
+        <hr>
+        <pre class="layui-code code-demo" lay-options="{theme: 'dark'}">
+<!--放到你想放的位置-->
+<span id="yshj"></span>
+<!--放到body底部-->
+<script src="https://github.moeyy.xyz/https://raw.githubusercontent.com/ymh0000123/Genshin-Impact-Good-words-and-sentences/main/script.js"></script>
+        </pre>
+      </hr>
+        <h4><span class="layui-badge layui-bg-blue">国内外推荐使用</span>通过jsdeliv引入</h4>
+        <hr>
+        <pre class="layui-code code-demo" lay-options="{theme: 'dark'}">
+<!--放到你想放的位置-->
+<span id="yshj"></span>
+<!--放到body底部-->
+<script src="https://cdn.jsdelivr.net/gh/ymh0000123/Genshin-Impact-Good-words-and-sentences@master/script_jsdeliv.js"></script>
+        </pre>
+      </div>
+    </fieldset>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    layui.use(function(){
+      // code
+      layui.code({
+        elem: '.code-demo'
+      });
+    })
+    </script>
 </body>
+
 </html>

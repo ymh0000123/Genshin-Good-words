@@ -1,8 +1,8 @@
 <!--
  * @Date: 2023-11-11 18:37:07
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-11-11 20:47:20
- * @FilePath: \Genshin-Impact-Good-words-and-sentences\index.html
+ * @LastEditTime: 2023-11-12 11:23:30
+ * @FilePath: \undefinedd:\hc\Genshin-Impact-Good-words-and-sentences\index.html
 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -19,6 +19,7 @@
   <link href="https://unpkg.com/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- 引入Bootstrap的JavaScript库 -->
   <script src="https://unpkg.com/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     .center {
       text-align: center;
@@ -42,21 +43,32 @@
     <div class="card">
       <div class="card-body">
         <p id="ys"></p>
-        <button type="button" class="layui-btn layui-btn-normal layui-btn-radius" onclick="location.reload()">换一句</button>
+        <button type="button" class="layui-btn layui-btn-normal layui-btn-radius"
+          onclick="location.reload()">换一句</button>
       </div>
     </div>
   </div>
   <div class="container py-4">
     <fieldset class="layui-elem-field">
-      <legend><h2>如何使用这个api</h2></legend>
+      <legend>
+        <h2>如何使用这个api</h2>
+      </legend>
       <div class="layui-field-box">
+        <h4><span class="layui-badge layui-bg-blue">国内外推荐使用</span>通过GIthub Pages引入</h4>
+        <hr>
+        <pre class="layui-code code-demo" lay-options="{theme: 'dark'}">
+<!--放到你想放的位置-->
+<span id="ys"></span>
+<!--放到body底部-->
+<script src="https://ymh0000123.github.io/Genshin-Impact-Good-words-and-sentences/script.js"></script>
+        </pre>
         <h4><span class="layui-badge layui-bg-blue">国内推荐使用</span>通过github.moeyy.xyz引入</h4>
         <hr>
         <pre class="layui-code code-demo" lay-options="{theme: 'dark'}">
 <!--放到你想放的位置-->
 <span id="ys"></span>
 <!--放到body底部-->
-<script src="https://github.moeyy.xyz/https://raw.githubusercontent.com/ymh0000123/Genshin-Impact-Good-words-and-sentences/main/script.js"></script>
+<script src="https://github.moeyy.xyz/https://raw.githubusercontent.com/ymh0000123/Genshin-Impact-Good-words-and-sentences/main/script_moeyy.js"></script>
         </pre>
         <h4><span class="layui-badge layui-bg-blue">国内外推荐使用</span>通过jsdeliv引入</h4>
         <hr>
@@ -66,44 +78,47 @@
 <!--放到body底部-->
 <script src="https://cdn.jsdelivr.net/gh/ymh0000123/Genshin-Impact-Good-words-and-sentences@master/script_jsdeliv.js"></script>
         </pre>
-      <h4><span class="layui-badge layui-bg-blue">历史</span>更新日志</h4>
-      <hr>
-      <ul>
-      <div class="layui-timeline">
-        <div class="layui-timeline-item">
-          <i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop layui-timeline-axis"></i>
-          <div class="layui-timeline-content layui-text">
-            <div class="layui-timeline-title">API的故事还在发生</div>
+
+        <h4><span class="layui-badge layui-bg-blue">历史</span>更新日志</h4>
+        <hr>
+        <ul>
+          <div class="layui-timeline">
+            <div class="layui-timeline-item">
+              <i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop layui-timeline-axis"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">API的故事还在发生</div>
+              </div>
+              <div class="layui-timeline-item">
+                <i class="layui-icon layui-timeline-axis layui-icon-fire"></i>
+                <div class="layui-timeline-content layui-text">
+                  <div class="layui-timeline-title">2023-11-11 , 我们对API进行重构,方便我们维护API和方便用户使用更好的镜像,并且这次更新对已经安装的网站没有影响。
+                  </div>
+                </div>
+              </div>
+              <div class="layui-timeline-item">
+                <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+                <div class="layui-timeline-content layui-text">
+                  <div class="layui-timeline-title">2023-8-11 , API首次亮相,没有太多人关注。</div>
+                </div>
+              </div>
+            </div>
           </div>
-        <div class="layui-timeline-item">
-          <i class="layui-icon layui-timeline-axis layui-icon-fire"></i>
-          <div class="layui-timeline-content layui-text">
-            <div class="layui-timeline-title">2023-11-11 , 我们对API进行重构,方便我们维护API和方便用户使用更好的镜像,并且这次更新对已经安装的网站没有影响。</div>
-          </div>
-        </div>
-        <div class="layui-timeline-item">
-          <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
-          <div class="layui-timeline-content layui-text">
-            <div class="layui-timeline-title">2023-8-11 , API首次亮相,没有太多人关注。</div>
-          </div>
-        </div>
-        </div>
-      </div>
       </div>
     </fieldset>
   </div>
   <p style="text-align: center;">
- <a href="https://ymh0000123.github.io/ymh0000123/" style=" text-decoration: none; border: none; font-style: normal;">关于API作者没用的小废鼠</a>
+    <a href="https://ymh0000123.github.io/ymh0000123/"
+      style=" text-decoration: none; border: none; font-style: normal;">关于API作者没用的小废鼠</a>
   </p>
   <script src="script.js"></script>
   <script>
-    layui.use(function(){
+    layui.use(function () {
       // code
       layui.code({
         elem: '.code-demo'
       });
     })
-    </script>
+  </script>
 </body>
 
 </html>

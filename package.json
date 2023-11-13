@@ -1,0 +1,11 @@
+{
+  "name": "genshin-impact-good-words-and-sentences",
+  "version": "1.0.1",
+  "description": "",
+  "main": "script_npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED"
+}

@@ -1,5 +1,5 @@
 // 使用fetch函数获取文本文件内容
-fetch('https://github.moeyy.xyz/https://raw.githubusercontent.com/ymh0000123/Genshin-Impact-Good-words-and-sentences/main/Good-words.txt')
+fetch('https://unpkg.com/genshin-impact-good-words-and-sentences/Good-words.txt')
 .then(response => response.text())
 .then(data => {
   // 将文本内容按行分割成数组

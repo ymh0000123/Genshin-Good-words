@@ -1,4 +1,4 @@
-name: To NPM
+name:  To NPM
 "on":
   - workflow_dispatch
   - push
@@ -10,6 +10,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16.x
+      - run: python3 new_version.py
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}

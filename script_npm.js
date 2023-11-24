@@ -1,5 +1,5 @@
 //原神好句api by没用的小废鼠
-fetch('https://unpkg.com/Genshin-Good-words/Good-words.txt')
+fetch('https://unpkg.com/genshin-good-words/Good-words.txt')
 .then(response => response.text())
 .then(data => {
   const lines = data.split('\n');

@@ -8,21 +8,28 @@ NPM仓库[genshin-good-words](https://www.npmjs.com/package/genshin-good-words)
 
 ### GIthub Pages
 
+```html
 <span id="ys">加载中...</span>
 
 <script src="https://ymh0000123.github.io/Genshin-Good-words/script.js"></script>
+```
 
 ### jsdelivr
 
+```html
 <span id="ys">加载中...</span>
 
 <script src="https://cdn.jsdelivr.net/gh/ymh0000123/Genshin-Good-words@main/script_jsdelivr.js""></script>
+```
 
 ### github.moeyy.xyz
 
+```html
 <span id="ys">加载中...</span>
 
 <script src="https://github.moeyy.xyz/https://raw.githubusercontent.com/ymh0000123/Genshin-Good-words/main/script_moeyy.js"></script>
+```
+
 
 ## 关于来源
 

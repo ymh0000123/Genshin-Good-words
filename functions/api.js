@@ -1,6 +1,6 @@
 export async function onRequest(event) {
-  const url = 'https://unpkg.com/genshin-good-words/Good-words.txt';
-  const response = await fetch(url);
+  const url = '/Good-words.txt';
+  const response = await env.ASSETS.fetch(url)
   const text = await response.text();
 
   // Split the text into lines

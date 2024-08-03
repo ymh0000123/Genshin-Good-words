@@ -1,7 +1,6 @@
 export async function onRequest(event) {
   const url = '/Good-words.txt';
-  const response = await env.ASSETS.fetch(url)
-  const text = await response.text();
+  const text = await env.ASSETS.fetch(url)
 
   // Split the text into lines
   const lines = text.split('\n').filter(line => line.trim() !== '');

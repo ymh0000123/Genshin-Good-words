@@ -17,6 +17,9 @@ export async function onRequest(event) {
   return new Response(JSON.stringify(jsonResponse), {
     headers: {
       'Content-Type': 'application/json; charset=utf-8',
+      'Access-Control-Allow-Origin': '*', // 允许所有来源的跨域请求
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS', // 允许的HTTP方法
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization' // 允许的请求头
     },
   });
 }
